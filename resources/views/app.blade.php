@@ -8,7 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container mx-auto">
+    @include('partials._header')
+    <div class="container mx-auto py-8">
         @yield('content')
     </div>
     <script src="{{ asset('js/app.js') }}"></script>
