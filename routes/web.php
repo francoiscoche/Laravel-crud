@@ -15,3 +15,4 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [PostController::class, 'index'])->name('homepage');
+Route::get('/article/{id}', [PostController::class, 'article'])->name('article');

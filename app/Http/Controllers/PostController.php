@@ -17,4 +17,13 @@ class PostController extends Controller
             'posts' => $posts
         ]);
     }
+
+    public function article($id) {
+
+        $post = Post::findOrFail($id);
+
+        return view('article', [
+            'post' => $post
+        ]);
+    }
 }
