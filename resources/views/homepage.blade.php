@@ -2,6 +2,13 @@
 
 @section('content')
     <h1>Bienvenue sur mon blog</h1>
+    <div class="flash-message">
+        @if(Session::has('alert-success'))
+            <div class="bg-green-100 rounded-lg py-5 px-6 mb-4 text-base text-green-700 mb-3" role="alert">
+                Article enregistré avec success.
+            </div>
+        @endif
+    </div>
     <h2>Liste des derniers articles :</h2>
     <div class="grid grid-cols-3 gap-4">
         @forelse ($posts as $post)

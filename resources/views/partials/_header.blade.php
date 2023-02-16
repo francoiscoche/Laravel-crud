@@ -37,10 +37,10 @@ aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle 
   <li class="nav-item px-2">
     <a class="nav-link active" aria-current="page" href="{{ route('homepage') }}">Accueil</a>
   </li>
-  {{-- <li class="nav-item pr-2">
-    <a class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0" href="#">Features</a>
-  </li>
   <li class="nav-item pr-2">
+    <a class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0" href="{{ route('new') }}">Créer un article</a>
+  </li>
+  {{-- <li class="nav-item pr-2">
     <a class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0" href="#">Pricing</a>
   </li> --}}
 </ul>
